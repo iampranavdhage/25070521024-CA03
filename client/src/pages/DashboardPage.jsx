@@ -347,13 +347,12 @@ export const DashboardPage = () => {
                     </p>
                   </div>
                   <span
-                    className={`badge-y2k ${
-                      t.priority === 'urgent'
+                    className={`badge-y2k ${t.priority === 'urgent'
                         ? 'badge-pink'
                         : t.priority === 'high'
-                        ? 'badge-amber'
-                        : 'badge-cyan'
-                    }`}
+                          ? 'badge-amber'
+                          : 'badge-cyan'
+                      }`}
                   >
                     {t.priority}
                   </span>
@@ -543,10 +542,10 @@ export const DashboardPage = () => {
           modalType === 'course'
             ? 'Add New Course'
             : modalType === 'subject'
-            ? 'Add New Subject'
-            : modalType === 'note'
-            ? 'Create Subject Note'
-            : 'Add Academic Task'
+              ? 'Add New Subject'
+              : modalType === 'note'
+                ? 'Create Subject Note'
+                : 'Add Academic Task'
         }
       >
         <form onSubmit={handleQuickAdd}>
